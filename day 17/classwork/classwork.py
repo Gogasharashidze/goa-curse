@@ -1,0 +1,1 @@
+print("goa is best cademy in the whole world")

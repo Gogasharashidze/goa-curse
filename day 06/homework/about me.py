@@ -1,0 +1,7 @@
+name = input("Enter your name: ")
+surname = input("Enter your surname: ")
+age = input("Enter your age: ")
+hobby = input("Enter your hobby: ")
+otherinformation = input("Enter other information about you: ")
+home = input("Enter where do you live: ")
+print("my name is" ,name , "my surname is" ,surname, "my age is" ,age , "my hobby is" ,hobby , "my otherinformation is" ,otherinformation , "my home is" ,home )

@@ -1,0 +1,60 @@
+
+.tag1 {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tag2 {
+    color: blue;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.tag3 {
+    color: green;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.tag4 {
+    color: purple;
+    font-size: 16px;
+    background-color: lightyellow;
+}
+
+.tag5 {
+    color: orange;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#tag6 {
+    color: pink;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+#tag7 {
+    color: teal;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#tag8 {
+    color: brown;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#tag9 {
+    color: gray;
+    font-size: 16px;
+    margin: 15px;
+}
+
+#tag10 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}

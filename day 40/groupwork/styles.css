@@ -1,25 +1,11 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Container */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* Header */
+
 header {
     background: #333;
     color: #fff;
@@ -33,7 +19,7 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
+ 
     padding: 0;
 }
 
@@ -47,7 +33,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Tours Section */
 #tours {
     padding: 20px 0;
 }
@@ -82,12 +67,13 @@ nav ul li a {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
+    
 }
 
 .tour-card button:hover {
     background: #555;
 }
+
 
 #gallery {
     padding: 20px 0;
@@ -98,18 +84,9 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
 
-.gallery-grid img {
-    width: 100%;
-    height: auto px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-/* Contact Section */
+
+
 #contact {
     padding: 20px 0;
     background: #fff;
@@ -123,7 +100,6 @@ nav ul li a {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -142,42 +118,11 @@ form button {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
+
 }
 
 form button:hover {
     background: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer .social-media {
-    list-style: none;
-    padding: 0;
-}
-
-footer .social-media li {
-    display: inline;
-    margin-right: 10px;
-}
-
-footer .social-media li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .social-media li a:hover {
-    text-decoration: underline;
 }
 
 

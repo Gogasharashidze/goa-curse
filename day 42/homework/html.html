@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Product Card</title>
+    <style>
+      
+        body {
+            background-color: #f8f3ee; 
+            font-family: Arial, sans-serif; 
+            color: #333;
+        }
+
+       
+        .card {
+            width: 350px;
+            margin: 20px auto; 
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+ 
+        .image-section {
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        .image-section img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .content-section h2 {
+            font-size: 24px; 
+            color: #2c3e50; 
+            margin-bottom: 10px; 
+        }
+
+        .content-section p {
+            font-size: 16px; 
+            line-height: 1.6;
+            margin-bottom: 20px
+    
+        }
+        
+        .price {
+            font-size: 22px;
+            color: #27ae60; 
+        }
+        .price del {
+            color: #e74c3c; 
+
+        }
+        .btn {
+            display: inline-block;
+            background-color: #27ae60; 
+            color: white; 
+            padding: 10px 20px;
+            text-decoration: none; 
+            font-size: 16px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        .btn:hover {
+            background-color: #219150; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="image-section">
+            <img src="image.png" alt="Gabrielle Essence Eau De Parfum">
+        </div>
+        <div class="content-section">
+            <h2>Gabrielle Essence Eau De Parfum</h2>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <div class="price">
+            <p>$149.99 <del>$169.99</del></p>
+        </div>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+</body>
+</html>

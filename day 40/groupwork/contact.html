@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan Travel</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
-    <!-- Header and Navigation -->
     <header>
         <div class="container">
             <h1>Japan Travel</h1>
@@ -22,13 +21,31 @@
         </div>
     </header>
 
-    <section id="hero">
+
+
+    <section id="contact">
         <div class="container">
-            <h2>Explore the Beauty of Japan</h2>
-            <p>Discover breathtaking landscapes, vibrant cities, and rich cultural experiences.</p>
-            <a href="http://127.0.0.1:5500/groupwork/structure.html">
-                <button style="border-radius: 10%;" style="size: 100px;">start your tour to japan</button>
-        </a>
+          
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    <br>
+    <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    <br>
+    <br>
+                <button type="submit">Send Message</button>
+            </form>
+            
         </div>
     </section>
+</body>
+</html>
+
 

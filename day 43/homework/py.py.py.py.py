@@ -1,0 +1,1 @@
+print("goa is the best academy in the whole georgia for a reason")

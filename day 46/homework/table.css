@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff3366, #6a00ff);
+    text-align: center; 
+    height: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto; 
+    border-collapse: collapse;
+    background-color: #2cd3bd;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #23c4a9;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #28b89a;
+}
+
+tr:nth-child(odd) {
+    background-color: #23c4a9;
+}
+
+
+/* ეს არის მეორე ცხრილისთვის */

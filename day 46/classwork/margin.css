@@ -1,0 +1,21 @@
+/* Margin examples */
+.margin1 {
+    margin: 20px;
+    background-color: rgb(177, 173, 230);
+}
+
+.margin2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(222, 48, 152);
+}
+
+.margin3 {
+    margin: 10px 50px;
+    background-color: rgb(33, 203, 67);
+}
+
+.margin4 {
+    margin: 5px 20px 15px 10px;
+    background-color: rgb(93, 0, 255);
+}

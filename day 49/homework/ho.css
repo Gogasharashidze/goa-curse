@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #14253d;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    text-align: center;
+}
+
+.nft-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00fff7;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #8bacda;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.price {
+    color: #00fff7;
+    font-weight: bold;
+}
+
+.time {
+    color: #8bacda;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.creator-img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.creator a {
+    color: white;
+    text-decoration: none;
+}
+
+.creator a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.supervisor {
+    border-top: 4px solid #00bcd4;
+}
+
+.team-builder {
+    border-top: 4px solid #f44336;
+}
+
+.karma {
+    border-top: 4px solid #ffc107;
+}
+
+.calculator {
+    border-top: 4px solid #2196f3;
+}

@@ -1,0 +1,26 @@
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    animation: moveAndRotate 6s infinite;
+    border-radius: 30px;
+}
+
+@keyframes moveAndRotate {
+    0% { transform: translateX(0); }             
+    33% { transform: translateX(200px); }        
+    50% { transform: translateX(200px); }        
+    66% { transform: translateX(0) rotate(360deg);} 
+    100% { transform: translateX(0); }          
+}
+
+
+
+
+

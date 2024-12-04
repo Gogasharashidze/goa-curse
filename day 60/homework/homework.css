@@ -1,0 +1,11 @@
+.growing-div {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s ease; 
+  }
+  
+  .growing-div:hover {
+    width: 400px; 
+  }
+  

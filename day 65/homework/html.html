@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* სტატიკური პოზიციონირება */
+        .static {
+            position: static;
+            background-color: lightblue;
+        }
+
+        /* აბსოლუტური პოზიციონირება */
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: lightgreen;
+        }
+
+        /* ფიქსირებული პოზიციონირება */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightcoral;
+        }
+
+        /* შედარებითი პოზიციონირება */
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* წებოვანი პოზიციონირება */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">Static Position</div>
+    <div class="absolute">Absolute Position</div>
+    <div class="fixed">Fixed Position</div>
+    <div class="relative">Relative Position</div>
+    <div class="sticky">Sticky Position</div>
+</body>
+</html>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* ერთი სურათი */
+        .single {
+            background-image: url('image1.jpg');
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+        }
+
+        /* მრავალი სურათი */
+        .multiple {
+            background-image: url('image1.jpg'), url('image2.jpg');
+            background-position: left, right;
+            height: 200px;
+            width: 600px;
+        }
+
+        /* გამეორების გარეშე */
+        .no-repeat {
+            background-image: url('image1.jpg');
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 300px;
+        }
+
+        /* ფონის პოზიციონირება */
+        .position {
+            background-image: url('image1.jpg');
+            background-position: center center;
+            height: 200px;
+            width: 300px;
+        }
+
+        /* სურათის სკალირება */
+        .scale {
+            background-image: url('image1.jpg');
+            background-size: contain;
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="single">Single Background</div>
+    <div class="multiple">Multiple Backgrounds</div>
+    <div class="no-repeat">No Repeat</div>
+    <div class="position">Positioned Background</div>
+    <div class="scale">Scaled Background</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .rotate {
+            transform: rotate(45deg);
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .scale {
+            transform: scale(1.5);
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+        }
+
+        .translate {
+            transform: translate(50px, 50px);
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+        }
+
+        .skew {
+            transform: skew(20deg, 10deg);
+            background-color: lightgoldenrodyellow;
+            width: 100px;
+            height: 100px;
+        }
+
+        .combine {
+            transform: translate(30px, 30px) rotate(30deg) scale(1.2);
+            background-color: lightpink;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">Rotate</div>
+    <div class="scale">Scale</div>
+    <div class="translate">Translate</div>
+    <div class="skew">Skew</div>
+    <div class="combine">Combined Transform</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            transition: background-color 0.5s, transform 0.5s;
+        }
+
+        .box:hover {
+            background-color: lightcoral;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover me</div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: lightgrey;
+        }
+
+        .item {
+            background-color: lightblue;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes example {
+            from {
+                background-color: lightblue;
+                left: 0;
+            }
+            to {
+                background-color: lightcoral;
+                left: 200px;
+            }
+        }
+
+        .animated {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: example 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated"></div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .responsive {
+            background-color: lightblue;
+            height: 100px;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .responsive {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive">Resize the browser</div>
+</body>
+</html>

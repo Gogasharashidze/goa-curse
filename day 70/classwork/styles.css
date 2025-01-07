@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    gap: 10px;
+}
+
+.header {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.small-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: orange;
+}
+
+.small-box {
+    flex: 1;
+    margin: 0 10px;
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.main-content {
+    background-color: orange;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+

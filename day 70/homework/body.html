@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exact Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 800px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+        .header {
+            grid-column: span 2;
+            background-color: #FF6B6B;
+        }
+        .left {
+            background-color: #4ECDC4;
+        }
+        .main {
+            background-color: #4ECDC4;
+        }
+        .right {
+            background-color: #FFAB66;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="left"></div>
+        <div class="main"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

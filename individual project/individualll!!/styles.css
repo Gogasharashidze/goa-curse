@@ -48,7 +48,7 @@ img {
 
 
 .progress-bar-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .progress-bar {
@@ -123,16 +123,12 @@ footer {
     gap: 1rem;
   }
   
-  /* Tablets (600px - 767px) */
+ 
   @media (min-width: 600px) and (max-width: 767px) {
     body {
       font-size: 18px;
     }
-  
-    .container {
-      gap: 1.5rem;
-    }
-  
+
     header {
       font-size: 1.5rem;
     }
@@ -176,10 +172,6 @@ footer {
       font-size: 24px;
     }
   
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
   
     header, main, footer {
       padding: 2rem;

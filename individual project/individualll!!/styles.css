@@ -1,4 +1,8 @@
 
+*{
+
+  font-family: cursive;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #6200ea;
+    background-color: #0056ea;
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -42,7 +46,7 @@ img {
 }
 
 .cta-button:hover {
-    background-color: #3700b3;
+    background-color: #0054b3;
     color: white;
 }
 
@@ -87,7 +91,7 @@ img {
 
 .project-button {
     display: inline-block;
-    background-color: #6200ea;
+    background-color: #003eea;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -96,11 +100,11 @@ img {
 }
 
 .project-button:hover {
-    background-color: #3700b3;
+    background-color: #042ed4;
 }
 
 footer {
-    background-color: #6200ea;
+    background-color: #0015ff;
     color: white;
     padding: 20px;
     text-align: center;
@@ -162,9 +166,6 @@ footer {
       font-size: 2rem;
     }
   
-    footer {
-      background: #ccc;
-    }
   }
   
   @media (min-width: 1200px) {
@@ -177,3 +178,6 @@ footer {
       padding: 2rem;
     }
   }
+
+
+  

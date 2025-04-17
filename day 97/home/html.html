@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript DOM Practice</title>
+</head>
+<body>
+
+  <!-- innerHTML vs textContent vs innerText -->
+  <h2>1. innerHTML vs textContent vs innerText</h2>
+  <p id="demo1">Hello!</p>
+  <p id="demo2">Hello!</p>
+  <p id="demo3">Hello!</p>
+  <button onclick="testInnerStuff()">Test innerHTML/textContent/innerText</button>
+
+  <!-- getElementById -->
+  <h2>2. getElementById</h2>
+  <p id="myText">Hello World!</p>
+  <button onclick="changeText()">Change</button>
+
+  <!-- getElementsByClassName -->
+  <h2>3. getElementsByClassName</h2>
+  <p class="greeting">Hi</p>
+  <p class="greeting">Hello</p>
+  <button onclick="changeAll()">Change All Greetings</button>
+
+  <!-- getElementsByTagName -->
+  <h2>4. getElementsByTagName</h2>
+  <h3>One</h3>
+  <h3>Two</h3>
+  <h3>Three</h3>
+  <button onclick="changeTags()">Change h3 Tags</button>
+
+  <!-- innerHTML example -->
+  <h2>5. innerHTML Example</h2>
+  <div id="box">Start</div>
+  <button onclick="addHTML()">Add Bold Text</button>
+
+  <!-- innerText example -->
+  <h2>6. innerText Example</h2>
+  <p id="textP">Original</p>
+  <button onclick="changeInnerText()">Change Text</button>
+
+  <!-- style example -->
+  <h2>7. Style Change</h2>
+  <p id="styleMe">Color me!</p>
+  <button onclick="colorText()">Make Red</button>
+
+  <!-- current date/time -->
+  <h2>8. Current Date & Time</h2>
+  <p id="currentDateTime"></p>
+
+  <!-- calculate age -->
+  <h2>9. Calculate Age</h2>
+  <input type="date" id="birthdate">
+  <button onclick="calculateAge()">Calculate Age</button>
+  <p id="ageResult"></p>
+
+  <!-- day of week -->
+  <h2>10. Day of the Week</h2>
+  <input type="date" id="anyDate">
+  <button onclick="showDayOfWeek()">Get Day</button>
+  <p id="dayOfWeek"></p>
+
+  <!-- timer -->
+  <h2>11. Timer (setInterval)</h2>
+  <p id="timer">0</p>
+
+  <!-- live clock -->
+  <h2>12. Clock (Live)</h2>
+  <p id="clock"></p>
+
+  <!-- random number logger -->
+  <h2>13. Random Number Logger</h2>
+  <p>Check console every second for a random number.</p>
+
+  <!-- delayed message -->
+  <h2>14. Delayed Message</h2>
+  <input type="text" id="message" placeholder="Enter your message">
+  <input type="number" id="delay" placeholder="Delay in ms">
+  <button onclick="showDelayedMessage()">Start Delay</button>
+  <p id="delayedOutput"></p>
+
+  <script>
+    // innerHTML vs textContent vs innerText
+    function testInnerStuff() {
+      document.getElementById("demo1").innerHTML = "<strong>გამარჯობა!</strong>";
+      document.getElementById("demo2").textContent = "<strong>გამარჯობა!</strong>";
+      document.getElementById("demo3").innerText = "<strong>გამარჯობა!</strong>";
+    }
+
+    // getElementById
+    function changeText() {
+      document.getElementById("myText").textContent = "შეცვლილი ტექსტი!";
+    }
+
+    // getElementsByClassName
+    function changeAll() {
+      const elements = document.getElementsByClassName("greeting");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].textContent = "გამარჯობა!";
+      }
+    }
+
+    // getElementsByTagName
+    function changeTags() {
+      const tags = document.getElementsByTagName("h3");
+      for (let i = 0; i < tags.length; i++) {
+        tags[i].textContent = `სათაური ${i + 1}`;
+      }
+    }
+
+    // innerHTML example
+    function addHTML() {
+      document.getElementById("box").innerHTML = "<b>ეს არის მუქი ტექსტი</b>";
+    }
+
+    // innerText example
+    function changeInnerText() {
+      document.getElementById("textP").innerText = "შეცვლილი ტექსტი!";
+    }
+
+    // style
+    function colorText() {
+      const elem = document.getElementById("styleMe");
+      elem.style.color = "red";
+      elem.style.fontSize = "24px";
+    }
+
+    // display current date and time
+    function displayCurrentDateTime() {
+      const now = new Date();
+      const formatted = now.getFullYear() + "-" +
+        String(now.getMonth() + 1).padStart(2, '0') + "-" +
+        String(now.getDate()).padStart(2, '0') + " " +
+        String(now.getHours()).padStart(2, '0') + ":" +
+        String(now.getMinutes()).padStart(2, '0') + ":" +
+        String(now.getSeconds()).padStart(2, '0');
+      document.getElementById("currentDateTime").textContent = formatted;
+    }
+    displayCurrentDateTime();
+
+    // calculate age
+    function calculateAge() {
+      const birthDate = new Date(document.getElementById("birthdate").value);
+      const today = new Date();
+
+      let years = today.getFullYear() - birthDate.getFullYear();
+      let months = today.getMonth() - birthDate.getMonth();
+      let days = today.getDate() - birthDate.getDate();
+
+      if (days < 0) {
+        months--;
+        days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+      }
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+
+      document.getElementById("ageResult").textContent =
+        `You are ${years} years, ${months} months, and ${days} days old.`;
+    }
+
+    // day of the week
+    function showDayOfWeek() {
+      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const dateInput = new Date(document.getElementById("anyDate").value);
+      const day = days[dateInput.getDay()];
+      document.getElementById("dayOfWeek").textContent = `Day: ${day}`;
+    }
+
+    // timer
+    let count = 0;
+    setInterval(() => {
+      document.getElementById("timer").textContent = count;
+      count++;
+    }, 1000);
+
+    // live clock
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = time;
+    }
+    setInterval(updateClock, 1000);
+
+    // random number logger
+    setInterval(() => {
+      console.log("Random Number:", Math.random());
+    }, 1000);
+
+    // delayed message
+    function showDelayedMessage() {
+      const message = document.getElementById("message").value;
+      const delay = parseInt(document.getElementById("delay").value);
+
+      setTimeout(() => {
+        document.getElementById("delayedOutput").textContent = message;
+      }, delay);
+    }
+  </script>
+</body>
+</html>
